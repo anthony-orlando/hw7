@@ -1,9 +1,16 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="ContactUs.aspx.vb" Inherits="ContactUs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+<style type="text/css">
+    #csstable {
+        width: 612px;
+        margin-left: 155px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table>
+    <table id="csstable">
         <tr>
             <td>
                 <asp:Label ID="Lbl_email" runat="server" Text="Your Email Address:"></asp:Label>

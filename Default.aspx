@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:msci3300_g1ConnectionString %>" DeleteCommand="DELETE FROM [acorlando_hw7] WHERE [team_id] = @team_id" InsertCommand="INSERT INTO [acorlando_hw7] ([team_Name], [Coach], [city], [number_Of_Players], [Wins], [Losses]) VALUES (@team_Name, @Coach, @city, @number_Of_Players, @Wins, @Losses)" SelectCommand="SELECT * FROM [acorlando_hw7]" UpdateCommand="UPDATE [acorlando_hw7] SET [team_Name] = @team_Name, [Coach] = @Coach, [city] = @city, [number_Of_Players] = @number_Of_Players, [Wins] = @Wins, [Losses] = @Losses WHERE [team_id] = @team_id">
@@ -29,7 +30,7 @@
 
 
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="team_id" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="team_id" CssClass="gridview" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:BoundField DataField="team_Name" HeaderText="Team Name" SortExpression="team_Name" />
             <asp:BoundField DataField="Coach" HeaderText="Coach" SortExpression="Coach" />

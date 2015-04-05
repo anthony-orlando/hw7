@@ -16,12 +16,21 @@
             <h1>Iowa City Flag Football league</h1>
         </div>
         <div id="Right header"> 
+            <a href="./ContactUs.aspx">
+        <div id="date">
+        </div>
+            </a> 
         </div>
         <div id="menu">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/newTeam.aspx">New Team</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinkcontactus" runat="server" NavigateUrl="~/ContactUs.aspx">Contact US</asp:HyperLink>
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
+            <ul id="nav">
+	            <li><a href="./Default.aspx">Home</a></li>
+	            <li><a href="./newTeam.aspx">New Team</a></li>
+	            <li><a href="./aboutUs.aspx">About Us</a></li>
+	            <li><a href="./ContactUs.aspx">Contact Us</a></li>
+              </ul>  
+            <asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
+                    
+           
         </div>
         <div id="main">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

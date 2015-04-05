@@ -38,7 +38,7 @@
 
 
 
-<asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="team_id" DataSourceID="SqlDataSource1" CssClass="cssdetailsview" Height="50px" Width="125px">
+<asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="team_id" DataSourceID="SqlDataSource1" CssClass="cssdetailsview" Height="50px" Width="520px">
     <Fields>
         <asp:BoundField DataField="team_Name" HeaderText="Team Name" SortExpression="team_Name" />
         <asp:BoundField DataField="Coach" HeaderText="Coach" SortExpression="Coach" />

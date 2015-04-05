@@ -2,6 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+<style type="text/css">
+    .cssgridview {
+        margin-left: 256px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:msci3300_g1ConnectionString %>" DeleteCommand="DELETE FROM [acorlando_hw7] WHERE [team_id] = @team_id" InsertCommand="INSERT INTO [acorlando_hw7] ([team_Name], [Coach], [city], [number_Of_Players], [Wins], [Losses]) VALUES (@team_Name, @Coach, @city, @number_Of_Players, @Wins, @Losses)" SelectCommand="SELECT * FROM [acorlando_hw7]" UpdateCommand="UPDATE [acorlando_hw7] SET [team_Name] = @team_Name, [Coach] = @Coach, [city] = @city, [number_Of_Players] = @number_Of_Players, [Wins] = @Wins, [Losses] = @Losses WHERE [team_id] = @team_id">
@@ -29,7 +34,7 @@
 
 
     <br />
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="team_id" DataSourceID="SqlDataSource1" CssClass="cssgridview" DefaultMode="Insert">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="team_id" DataSourceID="SqlDataSource1" CssClass="cssgridview" DefaultMode="Insert" Width="500px">
         <EditItemTemplate>
            
         </EditItemTemplate>

@@ -6,16 +6,22 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="container">
         <div id="header">
+            <h1>Iowa City Flag Football league</h1>
         </div>
         <div id="Right header"> 
         </div>
         <div id="menu">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/newTeam.aspx">New Team</asp:HyperLink>
+            <asp:HyperLink ID="HyperLinkcontactus" runat="server" NavigateUrl="~/ContactUs.aspx">Contact US</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         </div>
         <div id="main">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

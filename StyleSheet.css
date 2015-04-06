@@ -13,7 +13,7 @@ p {width:600px;margin-left:200px;}
 }
 #nav li {
 	float: left;padding:5px;
-    width: 150px;
+    width: 100px;
     border:2px solid black;
 }
 #nav li a {
@@ -27,11 +27,11 @@ p {width:600px;margin-left:200px;}
 	background-color: #fff; }
 #container {width:1000px;height:700px; margin: 0 auto; border:solid 2px black;background-color:wheat;
             }
-#menu { float:left;width:851px;
-text-align:center;margin-left:100px;
+#menu { float:left;width:600px;
+text-align:center;
 }
-#date { float:right;padding-left:20px;width:266px;
-    margin-left: 0px;
+#date { float:right;padding-left:20px;width:100px;
+    margin-left: 20px;
 }
 #main {padding:20px; clear:both;text-align:center;}
 #footer{padding:20px;text-align:center;}

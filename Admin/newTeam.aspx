@@ -42,10 +42,11 @@
             <table>
                     <tr>
                         <td style="text-align:right;background-color:#74AFAD">
-                            Team Name:
+                            * Team Name:
                         </td >
                         <td style="text-align:left;">
                              <asp:TextBox ID="team_NameTextBox" runat="server" Text='<%# Bind("team_Name") %>' />
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="team_NameTextBox" ErrorMessage="Please Enter a Team Name"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>

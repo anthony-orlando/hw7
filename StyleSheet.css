@@ -1,6 +1,9 @@
 ﻿body {background-color:black;
 }
 p {width:600px;margin-left:200px;}
+h1{float:left;}
+h2{float:right;}
+
 .gridview{width:100%;border:1px solid black;background-color:tan;}
 .cssdetailsview { font-family: "Comic Sans MS"; background-color:#DFE2DB; 
                   border:solid 1px #525252; border-collapse:collapse;margin-left: 214px;
